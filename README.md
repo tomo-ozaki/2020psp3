@@ -50,7 +50,7 @@ git fetch upstream
     を修正し、commit、pushしてください。Visual Studio Codeを利用したcommit、push操作については、[操作説明資料][2]の「Commit & Push」を参照してください。
 
 2. 提出  
-提出が可能な状態になったら、GitHubでPull Requestを作成します。Pull Requestの作成方法については、[操作説明資料][2]の「提出方法 Pull Request」を参照してください。  
+提出が可能な状態になったら、GitHubでPull Requestを作成します。Pull Requestの作成方法については、[操作説明資料][2]の「提出方法 Pull Request」を参照してください。なお、プルリクエストのコメントの先頭に、@tomo-ozakiと書くようにしてください。  
 また、一つの課題で、複数の関数を実装する場合があります。このような場合、一つの実装が終わった段階で、Pull Requestを作成し、チェックを依頼することも可能です。
 
 
@@ -69,6 +69,21 @@ Pull Reuquestを尾崎(またはTA)がチェックし、必要に応じてコメ
 - [課題4](k04/README.md)
 - [課題5](k05/README.md)
 - [課題6](k06/README.md)
+
+## 課題の修正の取得  
+尾崎が課題を修正した場合、LACSで通知します。
+その場合、課題をダウンロードしたフォルダ((ローカルPCでの保存場所)/2020psp3)でbashを起動し、以下のコマンドを実行して、変更を取得してください。なお、"1. Upstreamの設定"は、一度実行すればよく、2回目からは実行する必要はありません。　　
+1. Upstreamの設定
+``` 
+git remote add upstream https://github.com/tomo-ozaki/2020psp3.git
+```
+
+2. 変更の取得
+```
+git fetch upstream
+git merge upstream/master
+```
+
 
 [1]:https://lacs.nagasaki-u.ac.jp/webapps/blackboard/execute/courseMain?course_id=_82376_1
 [2]:Reference/プログラミング演習III_操作説明.pdf
