@@ -35,7 +35,7 @@ typedef struct {
    (1) LinearSearch：IDをキーとし、リニアサーチで市町村を検索する。  
     [入力]
     - int key: 検索する市町村のID
-    - City arrayCity: 検索対象の都市別人口データ(配列)
+    - City arrayCity[]: 検索対象の都市別人口データ(配列)
     - int size: データの数  
 
     [出力]  
@@ -44,7 +44,7 @@ typedef struct {
     (2) BinarySearch: IDをキーとし、バイナリサーチで市町村を検索する。  
     [入力]
     - int key: 検索する市町村のID
-    - City arrayCity: 検索対象の都市別人口データ(配列)
+    - City arrayCity[]: 検索対象の都市別人口データ(配列)
     - int left: バイナリサーチを行う配列のindex(左端)
     - int right: バイナリサーチを行う配列のindex(右端)  
 
