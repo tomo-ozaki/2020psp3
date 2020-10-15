@@ -53,6 +53,7 @@ typedef struct {
 
 4. チャレンジ問題  
 (1) DeleteNodeAt: 任意のノードをリストから削除する(10点)  
+CHALLENGE2を有効にしてください。  
     [入力]  
     - Node** ppNode: リストの先頭を指すポインタ変数のアドレス(ポインタのポインタ)  
     - int cn: ノードの位置(先頭のノードを0とする)  
@@ -60,13 +61,14 @@ typedef struct {
     - return値: 削除に成功したらSUCCESS、失敗したらERRR  
 
     (2) SearchCityByName: 市町村を名称で検索する(5点)  
+    CHALLENGE1を有効にしてください。  
     [入力]
-    - int key: 検索する市町村のID
-    - City arrayCity: 検索対象の都市別人口データ(配列)
-    - int size: データの数  
+    - Node* pList: リストの先頭アドレス
+    - char* cityName: 検索する市町村の名称
 
     [出力]  
-    - return値: IDが合致した配列データのindex。IDが一致するデータがない場合は-1。
+    - return値: cityNameが合致した場所(先頭を0とする)。cityNameが一致するデータがない場合は-1。
+    - City* pCity: IDが合致した市町村のデータを入れる
 
 ## ソースコードの説明
 
