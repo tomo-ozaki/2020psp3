@@ -63,7 +63,7 @@ typedef struct {
     - int right: ソート対象配列の右側index  
 
     [出力]  
-    - City arrayCity[]: 食料合計でソートされた都市別消費データの配列  
+    - City arrayCity[]: 魚介類(seafood)でソートされた都市別消費データの配列  
 
 3. 補助関数  
 以下の関数はすでに実装されており、利用することができる。  
@@ -80,7 +80,7 @@ typedef struct {
     - int size: 都市の数  
 
     [出力]  
-    - City arrayCity[]: 食料合計でソートされた都市別消費データの配列  
+    - City arrayCity[]: 肉類(meat)でソートされた都市別消費データの配列  
 
     (2) MergeSort: マージソートを用いて、酒類(liquor)でソートする。(10点)    
     [入力]  
@@ -89,7 +89,7 @@ typedef struct {
     - int right: ソート対象配列の右側index
 
     [出力]  
-    - City arrayCity[]: 食料合計でソートされた都市別消費データの配列  
+    - City arrayCity[]: 酒類(liquor)でソートされた都市別消費データの配列  
 
     (3) 世帯人員、食料合計、穀類、魚介類など、5項目以上で長崎市の順位を求める。(10点)  
 
